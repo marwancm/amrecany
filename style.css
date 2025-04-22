@@ -1,0 +1,97 @@
+body {
+  background: linear-gradient(to right, #d9a7c7, #fffcdc);
+  font-family: 'Cairo', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+thead input[type="text"] {
+  width: 80%;
+  padding: 5px;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-bottom: 2px solid #007bff;
+  margin-bottom: 5px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.btn {
+  margin: 3px 0;
+  padding: 10px 20px;  /* زيادة حجم الأزرار */
+  font-size: 18px;  /* زيادة حجم الخط */
+  border: none;
+  border-radius: 8px;  /* جعل الحواف دائرية أكثر */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* تأثير عند التمرير */
+}
+
+.decrement {
+  background-color: #28a745;
+}
+
+.reset {
+  background-color: #dc3545;
+}
+
+th, td {
+  width: 50%;
+  text-align: center;
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+  font-size: 18px;
+}
+
+th {
+  border-bottom: 2px solid #007bff; /* إضافة حدود تحت الاسم */
+}
+
+.score-section {
+  background-color: #f8f9fa;  /* خلفية للأسكور */
+  border: 2px solid #ddd; /* إضافة حدود للأسكور */
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 600px) {
+  table {
+    font-size: 14px;
+  }
+
+  thead input[type="text"] {
+    font-size: 16px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 6px 14px;  /* تقليل حجم الأزرار في الشاشات الصغيرة */
+  }
+}
